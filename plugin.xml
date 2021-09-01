@@ -14,16 +14,16 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/toastyplugin.js" name="cwCrashPlugin">
+    <js-module src="www/cwCrashPlugin.js" name="cwCrashPlugin">
         <clobbers target="window.plugins.cwCrashPlugin" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="cwCrashPlugin">
-                <param name="android-package" value="com.stanleyidesis.cordova.plugin.cwCrashPlugin"/>
+                <param name="android-package" value="com.charliwild.cordova.plugin.cwCrashPlugin"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/cwCrashPlugin.java" target-dir="src/com/stanleyidesis/cordova/plugin" />
+        <source-file src="src/android/cwCrashPlugin.java" target-dir="src/com/charliwild/cordova/plugin" />
     </platform>
 </plugin>
