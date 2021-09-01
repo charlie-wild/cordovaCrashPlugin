@@ -37,10 +37,9 @@ public class PluginSample extends CordovaPlugin {
 
     // So here's the method that actually handles our action. We passed the callbackContext through
     // so we can send a result to the calling code (yay for asynchronous).
-    private void runCrash(CallbackContext callbackContext){
-        try {
+    private void runCrash(CallbackContext callbackContext){       
             int a[] = new int[5];
             a[5] = 30/0;  
             callbackContext.success();          
-    }
+   
 }
