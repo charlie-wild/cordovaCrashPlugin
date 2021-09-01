@@ -26,4 +26,17 @@
 
         <source-file src="src/android/cwCrashPlugin.java" target-dir="src/com/charliwild/cordova/plugin" />
     </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="cwCrashPlugin">
+                <param name="ios-package" value="cwCrashPlugin"/>
+            </feature>
+            <preference name="deployment-target" value="10.0"/>
+        </config-file>
+
+        <!-- must list both header files and source files. As Obj-C is less fussy than Java
+            about folder structure, we don't need to give it a target directory. -->
+        <header-file src="src/ios/cwCrashPlugin.h" />
+        <source-file src="src/ios/cwCrashPlugin.m" />
+    </platform>
 </plugin>

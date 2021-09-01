@@ -1,6 +1,6 @@
 // declare the name of the Java package our plugin resides in.
 // This is typically lowercase and in reverse-URL format.
-package com.thinkmoney.cordova.plugins.pluginsample;
+package com.charliwild.cordova.plugin.cwCrashPlugin;
 
 
 import org.apache.cordova.CallbackContext;
@@ -39,7 +39,8 @@ public class PluginSample extends CordovaPlugin {
     // so we can send a result to the calling code (yay for asynchronous).
     private void runCrash(CallbackContext callbackContext){
         try {
-            throw new ArithmeticException("Break the app!");
+            int a[] = new int[5];
+            a[5] = 30/0;  
             callbackContext.success();          
     }
 }
