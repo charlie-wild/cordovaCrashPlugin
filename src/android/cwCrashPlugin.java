@@ -43,3 +43,5 @@ public class PluginSample extends CordovaPlugin {
             callbackContext.success();          
    
 }
+
+}
