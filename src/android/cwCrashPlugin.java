@@ -10,7 +10,7 @@ import org.json.JSONArray;
 
 // Now we declare our plugin class. It must match the name of the file, be in Pascal case
 // (aka UpperCamelCase), and extend the CordovaPlugin class.
-public class PluginSample extends CordovaPlugin {
+public class cwCrashPlugin extends CordovaPlugin {
     
     // Every implementation of CordovaPlugin has an "execute" method. 
     // This has the following parameters:
