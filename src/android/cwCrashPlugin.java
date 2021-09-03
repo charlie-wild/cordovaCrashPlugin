@@ -22,7 +22,7 @@ public class cwCrashPlugin extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {        
                switch(action) {
                 case "CRASH_METHOD":                   
-                    runCrash(callbackContext);
+                    throw new RuntimeException("This is a crash");
                     // We return true to indicate that the action was successfully started,
                     // even if this later returns an error result.
                     return true;
@@ -37,11 +37,6 @@ public class cwCrashPlugin extends CordovaPlugin {
 
     // So here's the method that actually handles our action. We passed the callbackContext through
     // so we can send a result to the calling code (yay for asynchronous).
-    private void runCrash(CallbackContext callbackContext){       
-            int a[] = new int[5];
-            a[5] = 30/0;  
-            callbackContext.success();          
-   
-}
+  
 
 }
