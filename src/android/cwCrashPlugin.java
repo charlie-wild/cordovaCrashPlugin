@@ -24,8 +24,7 @@ public class cwCrashPlugin extends CordovaPlugin {
                 case "CRASH_METHOD":                   
                     throw new RuntimeException("This is a crash");
                     // We return true to indicate that the action was successfully started,
-                    // even if this later returns an error result.
-                    return true;
+                    // even if this later returns an error result.                    
                 default:
                     // We should always have a catch-all in case some numpty calls our cordova
                     // action with the wrong action name.
